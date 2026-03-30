@@ -47,7 +47,7 @@ Lần lặp 2: ch = "B" -> in "B-"
 Lần lặp 3: ch = "C" -> in "C-"
 
 Kết quả cuối: A-B-C-`,[`for ch in "ABC" sẽ cho ch nhận lần lượt "A", "B", "C".`,`print(ch, end="-") không xuống dòng ngay, mà thêm dấu "-" sau ký tự.`,`Ba lần in nối liên tiếp tạo thành A-B-C-.`],[`ABC sai vì thiếu dấu "-".`,`A B C sai vì end không phải dấu cách.`,`0-1-2- sai vì vòng lặp đang duyệt ký tự, không duyệt chỉ số.`],`Muốn đoán output của vòng lặp, hãy trace từng vòng một.`)},{q:`Kết quả của "abc" in "xyzabcdef" là gì?`,opts:[`True`,`False`,`"abc"`,`Lỗi`],ans:0,explain:p(`Đáp án đúng là True vì toán tử in đang kiểm tra xem xâu con "abc" có xuất hiện liên tiếp trong xâu lớn hơn hay không.`,`"xyzabcdef"
-   abc
+  abc
 => có xuất hiện liên tiếp`,[`Toán tử in với string trả về boolean: True hoặc False.`,`"abc" xuất hiện trong "xyzabcdef" bắt đầu từ vị trí 3.`,`Do đó kết quả là True.`],[`False sai vì thật sự có chuỗi con "abc".`,`"abc" sai vì biểu thức dùng in trả về boolean, không trả về chính chuỗi con.`,`Lỗi sai vì cú pháp hoàn toàn hợp lệ.`],`Hãy đọc “x in y” thành “x có nằm trong y không?”.`)},{q:`Kết quả của "AB" in "aAbBc" là gì?`,opts:[`True`,`False`],ans:1,explain:p(`Đáp án đúng là False vì Python phân biệt chữ hoa và chữ thường.`,`"aAbBc"
  01234
 
